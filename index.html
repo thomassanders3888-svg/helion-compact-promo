@@ -4,26 +4,31 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LOW WATER — THE HELION COMPACT</title>
-  <meta name="description" content="Book One of THE HELION COMPACT. Hard-political science fiction. Ebook pre-order, USD $9.99." />
+  <meta name="description" content="LOW WATER — Book One of THE HELION COMPACT. Hard-political science fiction: ice, scarce heat, and the crime already under the floor. Ebook pre-order reservation, USD $9.99." />
   <link rel="canonical" href="https://helioncompact.com/" />
   <meta name="theme-color" content="#0b0c10" />
+  <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="THE HELION COMPACT" />
   <meta property="og:url" content="https://helioncompact.com/" />
   <meta property="og:title" content="LOW WATER — THE HELION COMPACT" />
-  <meta property="og:description" content="A Core technician who can hear a dying plant — and the Compact that taught him not to hear people. Ebook pre-order, USD $9.99." />
+  <meta property="og:description" content="A Core technician who can hear a dying plant — and the Compact that taught him not to hear people. On Hearth Station the meters stay green while the water dies. Exile arrives dressed as honor. Ebook pre-order reservation, USD $9.99." />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="LOW WATER — THE HELION COMPACT" />
-  <meta name="twitter:description" content="Hard-political science fiction. Ebook pre-order, USD $9.99." />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c10'/%3E%3Cpath d='M6 24h20M8 20h16M11 16h10' stroke='%23c17a3a' stroke-width='1.4' fill='none'/%3E%3C/svg%3E" />
+  <meta name="twitter:description" content="Hard-political SF. Ice, scarce heat, delayed-burn heat — not instalove. Book One of THE HELION COMPACT. Ebook pre-order reservation, USD $9.99." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c10'/%3E%3Cpath d='M6 24h20M8 20h16M11 16h10' stroke='%23d4924a' stroke-width='1.4' fill='none'/%3E%3C/svg%3E" />
   <style>
     :root {
       color-scheme: dark;
       --bg: #0b0c10;
-      --ink: #e6dfd2;
-      --ember: #c17a3a;
-      --mute: #9a9386;
-      --line: rgba(193, 122, 58, 0.35);
-      --panel: #101218;
+      --ink: #eee7d8;
+      --ember: #d4924a;
+      --mute: #b6aea0;
+      --line: rgba(212, 146, 74, 0.38);
+      --panel: #12141b;
+      --ok: #c8d5b8;
+      --err: #e0b4a4;
+      --focus: #f0c27a;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -42,8 +47,8 @@
       inset: 0;
       pointer-events: none;
       background:
-        radial-gradient(ellipse 80% 50% at 50% 115%, rgba(193, 122, 58, 0.14), transparent 55%),
-        radial-gradient(ellipse 60% 40% at 50% -10%, rgba(230, 223, 210, 0.04), transparent 50%);
+        radial-gradient(ellipse 80% 50% at 50% 115%, rgba(212, 146, 74, 0.15), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 50% -10%, rgba(238, 231, 216, 0.045), transparent 50%);
     }
     body::after {
       content: "";
@@ -53,22 +58,35 @@
       opacity: 0.09;
       background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
+    .skip {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.75rem;
+      z-index: 3;
+      padding: 0.45rem 0.7rem;
+      background: var(--panel);
+      color: var(--ink);
+      text-decoration: none;
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+      transform: translateY(-160%);
+    }
+    .skip:focus {
+      transform: none;
+    }
     .wrap {
       position: relative;
       z-index: 1;
-      width: min(40rem, calc(100% - 2.4rem));
+      width: min(42rem, calc(100% - 2.4rem));
       margin: 0 auto;
-      padding: 3.25rem 0 2.5rem;
+      padding: 3.1rem 0 2.4rem;
       flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
     }
     .eyebrow {
       margin: 0;
       letter-spacing: 0.22em;
       text-transform: uppercase;
-      font-size: 0.68rem;
+      font-size: 0.72rem;
       color: var(--ember);
       font-family: system-ui, sans-serif;
     }
@@ -80,7 +98,7 @@
       margin: 0.7rem 0 0.35rem;
     }
     .cycle {
-      margin: 0 0 1.6rem;
+      margin: 0 0 1.45rem;
       font-size: 0.78rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
@@ -91,44 +109,105 @@
       height: 1px;
       border: 0;
       background: linear-gradient(90deg, transparent, var(--line), transparent);
-      margin: 0 0 1.6rem;
+      margin: 0 0 1.5rem;
     }
     .tagline {
-      margin: 0 0 1.15rem;
+      margin: 0 0 1.1rem;
       color: var(--ink);
-      font-size: 1.12rem;
+      font-size: 1.16rem;
       line-height: 1.45;
     }
     .blurb, .lede {
       margin: 0 0 1rem;
       color: var(--mute);
-      line-height: 1.62;
+      line-height: 1.65;
     }
     .lede { color: var(--ink); }
+    .heat {
+      margin: 0 0 1.7rem;
+      color: var(--mute);
+      line-height: 1.65;
+    }
+    .section-label {
+      margin: 0 0 0.85rem;
+      font-family: system-ui, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ember);
+    }
+    .showcase {
+      margin: 0 0 1.75rem;
+    }
+    .showcase-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      border-top: 1px solid var(--line);
+    }
+    .showcase-list li {
+      display: grid;
+      grid-template-columns: 7.4rem minmax(0, 1fr);
+      gap: 0.75rem 1rem;
+      margin: 0;
+      padding: 0.85rem 0;
+      border-bottom: 1px solid rgba(238, 231, 216, 0.08);
+    }
+    .hook-label {
+      font-family: system-ui, sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ember);
+      padding-top: 0.18rem;
+    }
+    .hook-copy {
+      margin: 0;
+      color: var(--mute);
+      line-height: 1.55;
+    }
     .offer {
-      margin-top: 2rem;
-      padding: 1.4rem 1.3rem 1.2rem;
+      margin-top: 0.25rem;
+      padding: 1.45rem 1.35rem 1.25rem;
       background: var(--panel);
       border: 1px solid var(--line);
+    }
+    .offer-kicker {
+      margin: 0 0 0.45rem;
+      font-family: system-ui, sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ember);
     }
     .price-row {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
       gap: 1rem;
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.55rem;
     }
     .cta-label {
       margin: 0;
-      font-size: 1.05rem;
+      font-size: 1.12rem;
+      font-weight: 400;
       letter-spacing: 0.01em;
     }
     .price {
+      margin: 0;
       font-family: system-ui, sans-serif;
-      font-size: 0.92rem;
+      font-size: 0.95rem;
       color: var(--ember);
       letter-spacing: 0.04em;
       white-space: nowrap;
+    }
+    .offer-copy {
+      margin: 0 0 1rem;
+      color: var(--mute);
+      font-size: 0.95rem;
+      line-height: 1.55;
     }
     #paypal-button-container { min-height: 3rem; }
     .status {
@@ -139,8 +218,8 @@
       line-height: 1.5;
     }
     .status.is-on { display: block; }
-    .status.is-ok { color: #c8d5b8; }
-    .status.is-err { color: #e0b4a4; }
+    .status.is-ok { color: var(--ok); }
+    .status.is-err { color: var(--err); }
     .note {
       margin: 0.95rem 0 0;
       font-size: 0.78rem;
@@ -151,18 +230,50 @@
     footer {
       position: relative;
       z-index: 1;
-      padding: 0 1.2rem 1.6rem;
+      padding: 0 1.2rem 1.7rem;
       text-align: center;
       font-family: system-ui, sans-serif;
+    }
+    .colophon {
+      margin: 0 0 0.7rem;
       font-size: 0.72rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--mute);
     }
+    .studio {
+      margin: 0;
+      font-size: 0.82rem;
+      letter-spacing: 0.01em;
+      text-transform: none;
+    }
+    .studio a {
+      color: var(--mute);
+      text-decoration: underline;
+      text-underline-offset: 0.18em;
+    }
+    .studio a:hover {
+      color: var(--ink);
+    }
+    a:focus-visible,
+    .skip:focus {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+    #paypal-button-container:focus-within {
+      outline: 2px solid var(--focus);
+      outline-offset: 4px;
+    }
     noscript p {
       font-family: system-ui, sans-serif;
       color: var(--mute);
       font-size: 0.88rem;
+    }
+    @media (max-width: 36rem) {
+      .showcase-list li {
+        grid-template-columns: 1fr;
+        gap: 0.28rem;
+      }
     }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
@@ -170,6 +281,7 @@
   </style>
 </head>
 <body>
+  <a class="skip" href="#preorder">Skip to pre-order</a>
   <main class="wrap">
     <p class="eyebrow">Book One of Seven</p>
     <h1>LOW WATER</h1>
@@ -178,20 +290,51 @@
     <p class="tagline">Hard-political science fiction. Ice, intent, and the crime already under the floor.</p>
     <p class="lede">A Core technician who can hear a dying plant — and the Compact that taught him not to hear people.</p>
     <p class="blurb">On Hearth Station the meters stay green while the water dies. Cade Voss logs the truth, then edits the official language, because that is what useful men do. When a bypass he failed to name kills someone in the next compartment, exile arrives dressed as honor.</p>
-    <p class="blurb">LOW WATER opens a seven-book cycle about discipline, scarce heat, and the crime that was taught as virtue.</p>
+    <p class="heat">LOW WATER opens a seven-book cycle about discipline, scarce heat, and the crime that was taught as virtue. Delayed-burn heat and found-family cost — not instalove or romantasy furniture.</p>
+
+    <section class="showcase" aria-labelledby="showcase-heading">
+      <h2 class="section-label" id="showcase-heading">Inside Book One</h2>
+      <ul class="showcase-list">
+        <li>
+          <span class="hook-label">Genre</span>
+          <p class="hook-copy">Hard-political SF: scarce heat, discipline, crime the Compact taught as virtue.</p>
+        </li>
+        <li>
+          <span class="hook-label">Stakes</span>
+          <p class="hook-copy">Cade Voss keeps plants honest on green meters while the water dies — usefulness is the trap.</p>
+        </li>
+        <li>
+          <span class="hook-label">Setting</span>
+          <p class="hook-copy">Hearth Station looks stable; board stays clean; people still pay.</p>
+        </li>
+        <li>
+          <span class="hook-label">Honor</span>
+          <p class="hook-copy">Exile dressed as honor: academy, named crews, missing ship in the archive.</p>
+        </li>
+        <li>
+          <span class="hook-label">Book One</span>
+          <p class="hook-copy">Book One of THE HELION COMPACT (seven). Start here; Intent follows.</p>
+        </li>
+      </ul>
+    </section>
 
     <section class="offer" id="preorder" aria-labelledby="cta-label">
+      <p class="offer-kicker">Ebook pre-order reservation</p>
       <div class="price-row">
         <h2 class="cta-label" id="cta-label">Pre-order ebook — $9.99</h2>
         <p class="price">USD $9.99</p>
       </div>
+      <p class="offer-copy">Pay now to reserve Book One of THE HELION COMPACT. Delivery details follow after checkout.</p>
       <div id="paypal-button-container"></div>
       <p class="status" id="checkout-status" role="status"></p>
       <p class="note">Ebook delivery details will follow after checkout. Fulfillment timing is still being finalized.</p>
       <noscript><p>PayPal checkout requires JavaScript.</p></noscript>
     </section>
   </main>
-  <footer>THE HELION COMPACT · helioncompact.com</footer>
+  <footer>
+    <p class="colophon">THE HELION COMPACT · helioncompact.com</p>
+    <p class="studio"><a href="https://terraforge-us.com/">Also from the studio — TerraForge early access</a></p>
+  </footer>
 
   <script src="https://www.paypal.com/sdk/js?client-id=AaxLRJKmKRPyCpXy0WDxCvxbg4rELMydKeT2UvrZta2l-NEbe1NWzqBaeY2LFWn6nStNbjFmIqJ4qFQK&currency=USD&intent=capture"></script>
   <script>
