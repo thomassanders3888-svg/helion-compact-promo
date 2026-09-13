@@ -3,20 +3,63 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LOW WATER — THE HELION COMPACT</title>
-  <meta name="description" content="LOW WATER — Book One of THE HELION COMPACT. Hard-political science fiction: ice, scarce heat, and the crime already under the floor. Ebook pre-order reservation, USD $19.99." />
+  <title>LOW WATER — Early Access Copy | THE HELION COMPACT</title>
+  <meta name="description" content="LOW WATER, Book One of THE HELION COMPACT. Dark political science fiction. Early Access Copy of the full manuscript, $19.99 via PayPal, delivered after checkout." />
   <link rel="canonical" href="https://helioncompact.com/" />
   <meta name="theme-color" content="#0b0c10" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="THE HELION COMPACT" />
   <meta property="og:url" content="https://helioncompact.com/" />
-  <meta property="og:title" content="LOW WATER — THE HELION COMPACT" />
-  <meta property="og:description" content="A Core technician who can hear a dying plant — and the Compact that taught him not to hear people. On Hearth Station the meters stay green while the water dies. Exile arrives dressed as honor. Ebook pre-order reservation, USD $19.99." />
+  <meta property="og:title" content="LOW WATER — Early Access Copy | THE HELION COMPACT" />
+  <meta property="og:description" content="Book One. Scarce heat, industrial cold, and political exile. Early Access full manuscript — $19.99." />
+  <meta property="og:site_name" content="THE HELION COMPACT" />
+  <meta property="og:image" content="https://helioncompact.com/cover-A2r.jpg" />
+  <meta property="og:image:alt" content="LOW WATER — Early Access Copy cover" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="LOW WATER — THE HELION COMPACT" />
-  <meta name="twitter:description" content="Hard-political SF. Ice, scarce heat, delayed-burn heat — not instalove. Book One of THE HELION COMPACT. Ebook pre-order reservation, USD $19.99." />
+  <meta name="twitter:title" content="LOW WATER — Early Access Copy | THE HELION COMPACT" />
+  <meta name="twitter:description" content="Book One. Scarce heat, industrial cold, and political exile. Early Access full manuscript — $19.99." />
+  <meta name="twitter:image" content="https://helioncompact.com/cover-A2r.jpg" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c10'/%3E%3Cpath d='M6 24h20M8 20h16M11 16h10' stroke='%23d4924a' stroke-width='1.4' fill='none'/%3E%3C/svg%3E" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Book",
+        "@id": "https://helioncompact.com/#book",
+        "name": "LOW WATER",
+        "url": "https://helioncompact.com/",
+        "bookEdition": "Early Access Copy",
+        "bookFormat": "EBook",
+        "inLanguage": "en",
+        "image": "https://helioncompact.com/cover-A2r.jpg",
+        "genre": "Dark political science fiction",
+        "description": "LOW WATER, Book One of THE HELION COMPACT. Dark political science fiction. Early Access Copy of the full manuscript.",
+        "isPartOf": {
+          "@type": "BookSeries",
+          "name": "THE HELION COMPACT"
+        }
+      },
+      {
+        "@type": "Product",
+        "@id": "https://helioncompact.com/#product",
+        "name": "LOW WATER — Early Access Copy",
+        "url": "https://helioncompact.com/",
+        "image": "https://helioncompact.com/cover-A2r.jpg",
+        "description": "Early Access Copy of the full LOW WATER manuscript. Book One of THE HELION COMPACT. Delivered after checkout.",
+        "isRelatedTo": { "@id": "https://helioncompact.com/#book" },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://helioncompact.com/#preorder",
+          "price": "19.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/PreOrder",
+          "itemCondition": "https://schema.org/NewCondition"
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       color-scheme: dark;
@@ -104,6 +147,17 @@
       text-transform: uppercase;
       color: var(--mute);
       font-family: system-ui, sans-serif;
+    }
+    .cover {
+      margin: 0 auto 1.65rem;
+      width: min(20.5rem, 78%);
+    }
+    .cover img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: 1px solid var(--line);
+      box-shadow: 0 1.25rem 2.6rem rgba(0, 0, 0, 0.48);
     }
     .rule {
       height: 1px;
@@ -262,7 +316,9 @@
     }
     a:focus-visible,
     .skip:focus,
-    .faq summary:focus-visible {
+    .faq summary:focus-visible,
+    .mail-form button:focus-visible,
+    .mail-form input:focus-visible {
       outline: 2px solid var(--focus);
       outline-offset: 3px;
     }
@@ -345,6 +401,73 @@
       display: inline-block;
       margin-top: 1rem;
     }
+    .mail-form {
+      display: grid;
+      gap: 0.9rem;
+      margin: 0.35rem 0 0;
+    }
+    .mail-form .field {
+      display: grid;
+      gap: 0.35rem;
+    }
+    .mail-form label {
+      font-family: system-ui, sans-serif;
+      font-size: 0.82rem;
+      color: var(--ink);
+    }
+    .mail-form input[type="email"],
+    .mail-form input[type="text"] {
+      width: 100%;
+      padding: 0.7rem 0.8rem;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+    }
+    .mail-form button {
+      justify-self: start;
+      padding: 0.65rem 1.15rem;
+      background: transparent;
+      border: 1px solid var(--ember);
+      color: var(--ember);
+      font-family: system-ui, sans-serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .mail-form button:hover {
+      color: var(--focus);
+      border-color: var(--focus);
+    }
+    .form-help {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      font-size: 0.78rem;
+      color: var(--mute);
+      line-height: 1.5;
+    }
+    .hp {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .legal {
+      margin: 0.7rem 0 0;
+      font-size: 0.78rem;
+      color: var(--mute);
+      line-height: 1.5;
+    }
+    .legal a {
+      color: var(--mute);
+      text-underline-offset: 0.18em;
+    }
+    .legal a:hover {
+      color: var(--ink);
+    }
     @media (max-width: 36rem) {
       .showcase-list li {
         grid-template-columns: 1fr;
@@ -362,6 +485,9 @@
     <p class="eyebrow">Book One of Seven</p>
     <h1>LOW WATER</h1>
     <p class="cycle">THE HELION COMPACT</p>
+    <figure class="cover">
+      <img src="/cover-A2r.jpg" alt="LOW WATER — Early Access Copy cover" width="1152" height="1728" fetchpriority="high" decoding="async" />
+    </figure>
     <hr class="rule" />
     <p class="tagline">Hard-political science fiction. Ice, intent, and the crime already under the floor.</p>
     <p class="lede">A Core technician who can hear a dying plant — and the Compact that taught him not to hear people.</p>
@@ -458,6 +584,10 @@
         <p>Ebook preorder via PayPal on this page — <strong>$19.99</strong>. Not KDP yet.</p>
       </details>
       <details>
+        <summary>Refunds or contact?</summary>
+        <p>Refunds follow PayPal Buyer Protection. After checkout, leave a delivery email on the thank-you page. For release notes only, use the form near the bottom of this page. This site does not host the manuscript.</p>
+      </details>
+      <details>
         <summary>Sample?</summary>
         <p>Opening (Prologue + early chapters) is the store-quality sample window; full manuscript stays off the promo site.</p>
       </details>
@@ -474,16 +604,35 @@
         <h2 class="cta-label" id="cta-label">LOW WATER — Early Access Copy</h2>
         <p class="price">USD $19.99</p>
       </div>
-      <p class="offer-copy">Pay now to reserve Book One of THE HELION COMPACT. Delivery details follow after checkout.</p>
+      <p class="offer-copy">Pay now to reserve Book One of THE HELION COMPACT. After checkout you will leave a delivery email for the Early Access Copy.</p>
       <div id="paypal-button-container"></div>
       <p class="status" id="checkout-status" role="status"></p>
-      <p class="note">Ebook delivery details will follow after checkout. Fulfillment timing is still being finalized.</p>
+      <p class="note">The Early Access Copy is emailed after checkout. This site never hosts the manuscript or signed download links. <a href="#contact">Refunds and contact</a>.</p>
       <noscript><p>PayPal checkout requires JavaScript.</p></noscript>
     </section>
+
+    <section class="band notes" id="notes" aria-labelledby="notes-heading">
+      <h2 id="notes-heading">Get release notes</h2>
+      <p>Occasional notes on LOW WATER and THE HELION COMPACT. Unsubscribe anytime. No spam.</p>
+      <form class="mail-form" id="news-form" action="https://formspree.io/f/FORM_ID_NEWS" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="LOW WATER release notes" />
+        <input type="hidden" name="list" value="release-notes" />
+        <p class="hp" aria-hidden="true">
+          <label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <div class="field">
+          <label for="news-email">Email address</label>
+          <input id="news-email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="news-help" />
+        </div>
+        <p class="form-help" id="news-help">Release notes only — not the checkout delivery form. Occasional notes. Unsubscribe anytime. No spam.</p>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
   </main>
-  <footer>
+  <footer id="contact">
     <p class="colophon">THE HELION COMPACT · helioncompact.com</p>
     <p class="studio"><a href="https://terraforge-us.com/">Also from the studio — TerraForge early access</a></p>
+    <p class="legal">Refunds follow PayPal Buyer Protection. Order questions: use the delivery form on the <a href="thanks.html">thank-you page</a> after checkout. Non-order mail: the <a href="#notes">release-notes form</a> on this page.</p>
   </footer>
 
   <script src="https://www.paypal.com/sdk/js?client-id=AaxLRJKmKRPyCpXy0WDxCvxbg4rELMydKeT2UvrZta2l-NEbe1NWzqBaeY2LFWn6nStNbjFmIqJ4qFQK&currency=USD&intent=capture"></script>
@@ -510,7 +659,8 @@
         },
         onApprove: function (data, actions) {
           return actions.order.capture().then(function () {
-            showStatus("ok", "Pre-order received. Delivery details will follow — fulfillment is still being finalized.");
+            showStatus("ok", "Payment received. Opening the thank-you page so you can leave a delivery email.");
+            window.location.assign("thanks.html");
           });
         },
         onError: function () {
