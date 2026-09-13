@@ -2,7 +2,7 @@
 
 Public marketing site for **THE HELION COMPACT** (helioncompact.com).
 
-Live offer: **LOW WATER** (Book 1) ebook pre-order, USD $9.99.
+Live offer: **LOW WATER — Early Access Copy** (Book 1), USD $19.99.
 
 - **Domain:** helioncompact.com (Cloudflare Pages project `helioncompact`)
 - **Ops / canon:** private `helion-compact-ops` (not this repo)
