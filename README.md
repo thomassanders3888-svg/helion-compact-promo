@@ -2,12 +2,11 @@
 
 Public marketing site for **THE HELION COMPACT** (helioncompact.com).
 
-- **Domain:** helioncompact.com (Cloudflare Registrar)
+Live offer: **LOW WATER** (Book 1) ebook pre-order, USD $9.99.
+
+- **Domain:** helioncompact.com (Cloudflare Pages project `helioncompact`)
 - **Ops / canon:** private `helion-compact-ops` (not this repo)
 - **Do not** commit manuscripts, enhance drafts, or secrets here
 
 ## Stack
-Cloudflare Pages (bind custom domain after first deploy).
-
-## Status
-Scaffold only — Web desk builds the landing.
+Static Cloudflare Pages. PayPal Buttons SDK on the landing page (`currency=USD`, `intent=capture`).

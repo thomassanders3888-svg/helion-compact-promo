@@ -3,27 +3,228 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>THE HELION COMPACT</title>
-  <meta name="description" content="Hard-political science fiction. Seven books. One Compact crime." />
+  <title>LOW WATER — THE HELION COMPACT</title>
+  <meta name="description" content="Book One of THE HELION COMPACT. Hard-political science fiction. Ebook pre-order, USD $9.99." />
   <link rel="canonical" href="https://helioncompact.com/" />
-  <meta name="theme-color" content="#0a0c0b" />
+  <meta name="theme-color" content="#0b0c10" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://helioncompact.com/" />
+  <meta property="og:title" content="LOW WATER — THE HELION COMPACT" />
+  <meta property="og:description" content="A Core technician who can hear a dying plant — and the Compact that taught him not to hear people. Ebook pre-order, USD $9.99." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="LOW WATER — THE HELION COMPACT" />
+  <meta name="twitter:description" content="Hard-political science fiction. Ebook pre-order, USD $9.99." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c10'/%3E%3Cpath d='M6 24h20M8 20h16M11 16h10' stroke='%23c17a3a' stroke-width='1.4' fill='none'/%3E%3C/svg%3E" />
   <style>
-    :root { color-scheme: dark; --bg:#0a0c0b; --ink:#ede8dc; --gold:#c9a15a; --mute:#9a9588; }
+    :root {
+      color-scheme: dark;
+      --bg: #0b0c10;
+      --ink: #e6dfd2;
+      --ember: #c17a3a;
+      --mute: #9a9386;
+      --line: rgba(193, 122, 58, 0.35);
+      --panel: #101218;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:var(--bg); color:var(--ink); min-height:100dvh; display:grid; place-items:center; padding:2rem; }
-    main { max-width:36rem; text-align:center; }
-    .eyebrow { letter-spacing:.18em; text-transform:uppercase; font-size:.72rem; color:var(--gold); font-family: system-ui, sans-serif; }
-    h1 { font-weight:400; font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:.75rem 0; }
-    p { color:var(--mute); line-height:1.55; }
-    .note { margin-top:2rem; font-size:.85rem; color:var(--mute); font-family: system-ui, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 115%, rgba(193, 122, 58, 0.14), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 50% -10%, rgba(230, 223, 210, 0.04), transparent 50%);
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.09;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(40rem, calc(100% - 2.4rem));
+      margin: 0 auto;
+      padding: 3.25rem 0 2.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .eyebrow {
+      margin: 0;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 0.68rem;
+      color: var(--ember);
+      font-family: system-ui, sans-serif;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: clamp(3rem, 11vw, 4.6rem);
+      line-height: 0.95;
+      letter-spacing: 0.04em;
+      margin: 0.7rem 0 0.35rem;
+    }
+    .cycle {
+      margin: 0 0 1.6rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mute);
+      font-family: system-ui, sans-serif;
+    }
+    .rule {
+      height: 1px;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 0 0 1.6rem;
+    }
+    .tagline {
+      margin: 0 0 1.15rem;
+      color: var(--ink);
+      font-size: 1.12rem;
+      line-height: 1.45;
+    }
+    .blurb, .lede {
+      margin: 0 0 1rem;
+      color: var(--mute);
+      line-height: 1.62;
+    }
+    .lede { color: var(--ink); }
+    .offer {
+      margin-top: 2rem;
+      padding: 1.4rem 1.3rem 1.2rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+    .cta-label {
+      margin: 0;
+      font-size: 1.05rem;
+      letter-spacing: 0.01em;
+    }
+    .price {
+      font-family: system-ui, sans-serif;
+      font-size: 0.92rem;
+      color: var(--ember);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+    #paypal-button-container { min-height: 3rem; }
+    .status {
+      display: none;
+      margin: 0.85rem 0 0;
+      font-family: system-ui, sans-serif;
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+    .status.is-on { display: block; }
+    .status.is-ok { color: #c8d5b8; }
+    .status.is-err { color: #e0b4a4; }
+    .note {
+      margin: 0.95rem 0 0;
+      font-size: 0.78rem;
+      color: var(--mute);
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+    }
+    footer {
+      position: relative;
+      z-index: 1;
+      padding: 0 1.2rem 1.6rem;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+    noscript p {
+      font-family: system-ui, sans-serif;
+      color: var(--mute);
+      font-size: 0.88rem;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
   </style>
 </head>
 <body>
-  <main>
-    <p class="eyebrow">A seven-book cycle</p>
-    <h1>THE HELION COMPACT</h1>
-    <p>Hard-political science fiction. Ice, intent, and the crime already under the floor.</p>
-    <p class="note">Coming — public landing under construction. Canon lives off this site.</p>
+  <main class="wrap">
+    <p class="eyebrow">Book One of Seven</p>
+    <h1>LOW WATER</h1>
+    <p class="cycle">THE HELION COMPACT</p>
+    <hr class="rule" />
+    <p class="tagline">Hard-political science fiction. Ice, intent, and the crime already under the floor.</p>
+    <p class="lede">A Core technician who can hear a dying plant — and the Compact that taught him not to hear people.</p>
+    <p class="blurb">On Hearth Station the meters stay green while the water dies. Cade Voss logs the truth, then edits the official language, because that is what useful men do. When a bypass he failed to name kills someone in the next compartment, exile arrives dressed as honor.</p>
+    <p class="blurb">LOW WATER opens a seven-book cycle about discipline, scarce heat, and the crime that was taught as virtue.</p>
+
+    <section class="offer" id="preorder" aria-labelledby="cta-label">
+      <div class="price-row">
+        <h2 class="cta-label" id="cta-label">Pre-order ebook — $9.99</h2>
+        <p class="price">USD $9.99</p>
+      </div>
+      <div id="paypal-button-container"></div>
+      <p class="status" id="checkout-status" role="status"></p>
+      <p class="note">Ebook delivery details will follow after checkout. Fulfillment timing is still being finalized.</p>
+      <noscript><p>PayPal checkout requires JavaScript.</p></noscript>
+    </section>
   </main>
+  <footer>THE HELION COMPACT · helioncompact.com</footer>
+
+  <script src="https://www.paypal.com/sdk/js?client-id=AaxLRJKmKRPyCpXy0WDxCvxbg4rELMydKeT2UvrZta2l-NEbe1NWzqBaeY2LFWn6nStNbjFmIqJ4qFQK&currency=USD&intent=capture"></script>
+  <script>
+    (function () {
+      var statusEl = document.getElementById("checkout-status");
+      function showStatus(kind, text) {
+        statusEl.className = "status is-on is-" + kind;
+        statusEl.textContent = text;
+      }
+      if (!window.paypal) {
+        showStatus("err", "PayPal checkout could not load. Refresh and try again.");
+        return;
+      }
+      paypal.Buttons({
+        style: { layout: "vertical", color: "gold", shape: "rect", label: "paypal" },
+        createOrder: function (data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: { value: "9.99" },
+              description: "LOW WATER ebook pre-order"
+            }]
+          });
+        },
+        onApprove: function (data, actions) {
+          return actions.order.capture().then(function () {
+            showStatus("ok", "Pre-order received. Delivery details will follow — fulfillment is still being finalized.");
+          });
+        },
+        onError: function () {
+          showStatus("err", "Checkout could not complete. Try again, or use another PayPal funding source.");
+        }
+      }).render("#paypal-button-container");
+    })();
+  </script>
 </body>
 </html>
