@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — LOW WATER Early Access Copy</title>
+  <meta name="description" content="Thank you for reserving LOW WATER — Early Access Copy. Leave a delivery email. The manuscript is sent after checkout and is never hosted on this page." />
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="theme-color" content="#0b0c10" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c10'/%3E%3Cpath d='M6 24h20M8 20h16M11 16h10' stroke='%23d4924a' stroke-width='1.4' fill='none'/%3E%3C/svg%3E" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b0c10;
+      --ink: #eee7d8;
+      --ember: #d4924a;
+      --mute: #b6aea0;
+      --line: rgba(212, 146, 74, 0.38);
+      --panel: #12141b;
+      --focus: #f0c27a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      display: flex;
+      flex-direction: column;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        radial-gradient(ellipse 80% 50% at 50% 115%, rgba(212, 146, 74, 0.15), transparent 55%),
+        radial-gradient(ellipse 60% 40% at 50% -10%, rgba(238, 231, 216, 0.045), transparent 50%);
+    }
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.09;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+    .skip {
+      position: absolute;
+      left: 0.75rem;
+      top: 0.75rem;
+      z-index: 3;
+      padding: 0.45rem 0.7rem;
+      background: var(--panel);
+      color: var(--ink);
+      text-decoration: none;
+      font-family: system-ui, sans-serif;
+      font-size: 0.85rem;
+      transform: translateY(-160%);
+    }
+    .skip:focus { transform: none; }
+    .wrap {
+      position: relative;
+      z-index: 1;
+      width: min(42rem, calc(100% - 2.4rem));
+      margin: 0 auto;
+      padding: 3.1rem 0 2.4rem;
+      flex: 1;
+    }
+    .eyebrow {
+      margin: 0;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-size: 0.72rem;
+      color: var(--ember);
+      font-family: system-ui, sans-serif;
+    }
+    h1 {
+      font-weight: 400;
+      font-size: clamp(2.1rem, 7vw, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: 0.03em;
+      margin: 0.7rem 0 0.35rem;
+    }
+    .cycle {
+      margin: 0 0 1.45rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--mute);
+      font-family: system-ui, sans-serif;
+    }
+    .rule {
+      height: 1px;
+      border: 0;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+      margin: 0 0 1.5rem;
+    }
+    .lede {
+      margin: 0 0 1rem;
+      color: var(--ink);
+      line-height: 1.65;
+    }
+    .blurb {
+      margin: 0 0 1.4rem;
+      color: var(--mute);
+      line-height: 1.65;
+    }
+    .card {
+      padding: 1.45rem 1.35rem 1.25rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+    }
+    .card h2 {
+      margin: 0 0 0.7rem;
+      font-weight: 400;
+      font-size: 1.15rem;
+    }
+    .mail-form {
+      display: grid;
+      gap: 0.9rem;
+      margin: 0.35rem 0 0;
+    }
+    .mail-form .field {
+      display: grid;
+      gap: 0.35rem;
+    }
+    .mail-form label {
+      font-family: system-ui, sans-serif;
+      font-size: 0.82rem;
+      color: var(--ink);
+    }
+    .mail-form input[type="email"],
+    .mail-form input[type="text"] {
+      width: 100%;
+      padding: 0.7rem 0.8rem;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      color: var(--ink);
+      font-family: system-ui, sans-serif;
+      font-size: 1rem;
+    }
+    .mail-form button {
+      justify-self: start;
+      padding: 0.65rem 1.15rem;
+      background: transparent;
+      border: 1px solid var(--ember);
+      color: var(--ember);
+      font-family: system-ui, sans-serif;
+      font-size: 0.88rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .mail-form button:hover {
+      color: var(--focus);
+      border-color: var(--focus);
+    }
+    .form-help {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      font-size: 0.78rem;
+      color: var(--mute);
+      line-height: 1.5;
+    }
+    .hp {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .back {
+      display: inline-block;
+      margin-top: 1.5rem;
+      color: var(--ember);
+      font-family: system-ui, sans-serif;
+      font-size: 0.88rem;
+      text-underline-offset: 0.2em;
+    }
+    .back:hover { color: var(--focus); }
+    footer {
+      position: relative;
+      z-index: 1;
+      padding: 0 1.2rem 1.7rem;
+      text-align: center;
+      font-family: system-ui, sans-serif;
+    }
+    .colophon {
+      margin: 0 0 0.7rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+    .legal {
+      margin: 0;
+      font-size: 0.78rem;
+      color: var(--mute);
+      line-height: 1.5;
+    }
+    a:focus-visible,
+    .skip:focus,
+    .mail-form button:focus-visible,
+    .mail-form input:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#fulfill">Skip to delivery email form</a>
+  <main class="wrap">
+    <p class="eyebrow">Payment received</p>
+    <h1>Thank you</h1>
+    <p class="cycle">LOW WATER — Early Access Copy</p>
+    <hr class="rule" />
+    <p class="lede">Your PayPal checkout for LOW WATER — Early Access Copy is complete.</p>
+    <p class="blurb">The Early Access Copy of the full manuscript will be emailed to the address you leave below. Delivery is gated: this page never hosts the manuscript, chapter files, or signed download URLs. There is no download button here.</p>
+
+    <section class="card" id="fulfill" aria-labelledby="fulfill-heading">
+      <h2 id="fulfill-heading">Where should we send it?</h2>
+      <form class="mail-form" id="fulfill-form" action="https://formspree.io/f/FORM_ID_FULFILL" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="LOW WATER Early Access Copy — delivery email" />
+        <input type="hidden" name="list" value="fulfillment" />
+        <p class="hp" aria-hidden="true">
+          <label>Leave this field empty <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <div class="field">
+          <label for="fulfill-name">Name <span class="form-help">(optional)</span></label>
+          <input id="fulfill-name" name="name" type="text" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="fulfill-email">Delivery email</label>
+          <input id="fulfill-email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="fulfill-help" />
+        </div>
+        <p class="form-help" id="fulfill-help">We use this address only to email your Early Access Copy. It is not a newsletter signup. The file is not available as a link on this page.</p>
+        <button type="submit">Send delivery email</button>
+      </form>
+    </section>
+
+    <a class="back" href="/">Return to LOW WATER</a>
+  </main>
+  <footer>
+    <p class="colophon">THE HELION COMPACT · helioncompact.com</p>
+    <p class="legal">Refunds follow PayPal Buyer Protection. This page does not host the manuscript.</p>
+  </footer>
+</body>
+</html>
