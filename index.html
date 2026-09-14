@@ -4,20 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>LOW WATER — Early Access Copy | THE HELION COMPACT</title>
-  <meta name="description" content="LOW WATER, Book One of THE HELION COMPACT. Dark political science fiction. Early Access Copy of the full manuscript, $19.99 via PayPal, delivered after checkout." />
+  <meta name="description" content="Buy LOW WATER — Early Access Copy for $19.99 USD. PayPal payment, then a delivery email. Purchased Early Access is the full manuscript, emailed privately. This site hosts the opening/sample only." />
   <link rel="canonical" href="https://helioncompact.com/" />
   <meta name="theme-color" content="#0b0c10" />
   <meta name="robots" content="index,follow" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://helioncompact.com/" />
   <meta property="og:title" content="LOW WATER — Early Access Copy | THE HELION COMPACT" />
-  <meta property="og:description" content="Book One. Scarce heat, industrial cold, and political exile. Early Access full manuscript — $19.99." />
+  <meta property="og:description" content="Buy LOW WATER Early Access — $19.99. Full manuscript emailed privately after checkout. Public site: opening/sample only." />
   <meta property="og:site_name" content="THE HELION COMPACT" />
   <meta property="og:image" content="https://helioncompact.com/cover-A2r.jpg" />
-  <meta property="og:image:alt" content="LOW WATER — Early Access Copy cover" />
+  <meta property="og:image:alt" content="Cover of LOW WATER — Book One of THE HELION COMPACT" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="LOW WATER — Early Access Copy | THE HELION COMPACT" />
-  <meta name="twitter:description" content="Book One. Scarce heat, industrial cold, and political exile. Early Access full manuscript — $19.99." />
+  <meta name="twitter:description" content="Buy LOW WATER Early Access — $19.99. Full manuscript emailed privately after checkout. Public site: opening/sample only." />
   <meta name="twitter:image" content="https://helioncompact.com/cover-A2r.jpg" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230b0c10'/%3E%3Cpath d='M6 24h20M8 20h16M11 16h10' stroke='%23d4924a' stroke-width='1.4' fill='none'/%3E%3C/svg%3E" />
   <script type="application/ld+json">
@@ -34,7 +34,7 @@
         "inLanguage": "en",
         "image": "https://helioncompact.com/cover-A2r.jpg",
         "genre": "Dark political science fiction",
-        "description": "LOW WATER, Book One of THE HELION COMPACT. Dark political science fiction. Early Access Copy of the full manuscript.",
+        "description": "LOW WATER, Book One of THE HELION COMPACT. Dark political science fiction. Purchased Early Access Copy is the full manuscript, emailed privately after checkout. This public site hosts the opening/sample only.",
         "isPartOf": {
           "@type": "BookSeries",
           "name": "THE HELION COMPACT"
@@ -46,14 +46,14 @@
         "name": "LOW WATER — Early Access Copy",
         "url": "https://helioncompact.com/",
         "image": "https://helioncompact.com/cover-A2r.jpg",
-        "description": "Early Access Copy of the full LOW WATER manuscript. Book One of THE HELION COMPACT. Delivered after checkout.",
+        "description": "Buy LOW WATER — Early Access Copy. Purchased Early Access is the full manuscript, emailed privately after checkout as a Markdown zip until an EPUB exists. This site never hosts the manuscript or signed download URLs.",
         "isRelatedTo": { "@id": "https://helioncompact.com/#book" },
         "offers": {
           "@type": "Offer",
-          "url": "https://helioncompact.com/#preorder",
+          "url": "https://helioncompact.com/#buy",
           "price": "19.99",
           "priceCurrency": "USD",
-          "availability": "https://schema.org/PreOrder",
+          "availability": "https://schema.org/InStock",
           "itemCondition": "https://schema.org/NewCondition"
         }
       }
@@ -242,15 +242,12 @@
       color: var(--ember);
     }
     .price-row {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 0.55rem;
+      display: block;
+      margin-bottom: 0.7rem;
     }
     .cta-label {
-      margin: 0;
-      font-size: 1.12rem;
+      margin: 0 0 0.4rem;
+      font-size: 1.2rem;
       font-weight: 400;
       letter-spacing: 0.01em;
     }
@@ -259,8 +256,8 @@
       font-family: system-ui, sans-serif;
       font-size: 0.95rem;
       color: var(--ember);
-      letter-spacing: 0.04em;
-      white-space: nowrap;
+      letter-spacing: 0.03em;
+      line-height: 1.45;
     }
     .offer-copy {
       margin: 0 0 1rem;
@@ -318,7 +315,8 @@
     .skip:focus,
     .faq summary:focus-visible,
     .mail-form button:focus-visible,
-    .mail-form input:focus-visible {
+    .mail-form input:focus-visible,
+    .mail-form textarea:focus-visible {
       outline: 2px solid var(--focus);
       outline-offset: 3px;
     }
@@ -416,7 +414,8 @@
       color: var(--ink);
     }
     .mail-form input[type="email"],
-    .mail-form input[type="text"] {
+    .mail-form input[type="text"],
+    .mail-form textarea {
       width: 100%;
       padding: 0.7rem 0.8rem;
       background: var(--bg);
@@ -424,6 +423,10 @@
       color: var(--ink);
       font-family: system-ui, sans-serif;
       font-size: 1rem;
+    }
+    .mail-form textarea {
+      min-height: 5.5rem;
+      resize: vertical;
     }
     .mail-form button {
       justify-self: start;
@@ -480,13 +483,13 @@
   </style>
 </head>
 <body>
-  <a class="skip" href="#preorder">Skip to pre-order</a>
+  <a class="skip" href="#buy">Skip to buy Early Access Copy</a>
   <main class="wrap">
     <p class="eyebrow">Book One of Seven</p>
     <h1>LOW WATER</h1>
     <p class="cycle">THE HELION COMPACT</p>
     <figure class="cover">
-      <img src="/cover-A2r.jpg" alt="LOW WATER — Early Access Copy cover" width="1152" height="1728" fetchpriority="high" decoding="async" />
+      <img src="/cover-A2r.jpg" alt="Cover of LOW WATER — Book One of THE HELION COMPACT" width="1152" height="1728" fetchpriority="high" decoding="async" />
     </figure>
     <hr class="rule" />
     <p class="tagline">Hard-political science fiction. Ice, intent, and the crime already under the floor.</p>
@@ -531,18 +534,20 @@
         <li>Exile dressed as honor; academy, named crews, a missing ship in the archive.</li>
         <li>Industrial survival on Hearth Station — green meters while the water dies.</li>
       </ul>
-      <p><a class="inline-cta" href="#preorder">Pre-order LOW WATER — $19.99 via PayPal</a></p>
+      <p><a class="inline-cta" href="#buy">Buy LOW WATER — Early Access Copy</a></p>
     </section>
 
     <section class="band get" aria-labelledby="get-heading">
-      <h2 id="get-heading">What you get when you pre-order</h2>
+      <h2 id="get-heading">What you get</h2>
       <ul>
-        <li><strong>LOW WATER — Early Access Copy</strong> at <strong>$19.99</strong> via PayPal (existing checkout on this page).</li>
-        <li>Store-quality sample window: Prologue + early material only — full manuscript stays off this site.</li>
+        <li><strong>LOW WATER — Early Access Copy</strong> at <strong>$19.99 USD</strong> via PayPal (checkout on this page).</li>
+        <li>Purchased Early Access is the full manuscript, emailed privately after checkout.</li>
+        <li>This public site shows the opening/sample only — it never hosts the manuscript or signed download URLs.</li>
+        <li>File format: a <strong>Markdown zip</strong> until an EPUB exists.</li>
         <li>Entry into THE HELION COMPACT seven-book cycle.</li>
         <li>No fake blurbs, no KDP claim yet.</li>
       </ul>
-      <p><a class="inline-cta" href="#preorder">Pre-order the ebook — $19.99</a></p>
+      <p><a class="inline-cta" href="#buy">Get Early Access Copy — $19.99</a></p>
     </section>
 
     <section class="band series" aria-labelledby="cycle-heading">
@@ -558,7 +563,7 @@
         <li>The Last Why</li>
       </ol>
       <p>One long argument about scarce heat, usefulness, and the crime taught as virtue. Pressure accumulates; it does not reset.</p>
-      <p><a class="inline-cta" href="#preorder">Lock in LOW WATER at $19.99</a></p>
+      <p><a class="inline-cta" href="#buy">Buy LOW WATER — Early Access Copy</a></p>
     </section>
 
     <section class="band faq" aria-labelledby="faq-heading">
@@ -580,34 +585,43 @@
         <p>Delayed-burn, costly, antagonistic. Not instalove. Not the prize.</p>
       </details>
       <details>
-        <summary>Preorder / price?</summary>
-        <p>Ebook preorder via PayPal on this page — <strong>$19.99</strong>. Not KDP yet.</p>
+        <summary>Buy / price?</summary>
+        <p>Buy LOW WATER — Early Access Copy via PayPal on this page — <strong>$19.99 USD</strong>. PayPal payment, then a delivery email. Not KDP yet.</p>
+      </details>
+      <details>
+        <summary>What is Early Access vs the public sample?</summary>
+        <p>Purchased Early Access is the full manuscript, emailed privately after checkout. This public site shows the opening/sample only (Prologue + early chapters). The site never hosts the manuscript or signed download URLs.</p>
+      </details>
+      <details>
+        <summary>What format is the file?</summary>
+        <p>Delivered as a <strong>Markdown zip</strong> until an EPUB exists.</p>
+      </details>
+      <details>
+        <summary>When does the file arrive?</summary>
+        <p>Expect an email with LOW WATER Early Access within 24–48 hours of submitting your delivery email. Check spam. If it does not arrive, resubmit the thank-you page form with your PayPal transaction ID, or open a PayPal case under Buyer Protection.</p>
       </details>
       <details>
         <summary>Refunds or contact?</summary>
-        <p>Refunds follow PayPal Buyer Protection. After checkout, leave a delivery email on the thank-you page. For release notes only, use the form near the bottom of this page. This site does not host the manuscript.</p>
-      </details>
-      <details>
-        <summary>Sample?</summary>
-        <p>Opening (Prologue + early chapters) is the store-quality sample window; full manuscript stays off the promo site.</p>
+        <p>Refunds follow PayPal Buyer Protection. After checkout, submit the delivery email on the thank-you page. That form is also the contact path for order questions. Release notes only: the form near the bottom of this page. This site does not host the manuscript.</p>
       </details>
       <details>
         <summary>AI / production note?</summary>
         <p>Portions assisted by LLMs; the author remains responsible for the final work. No author legal name on this landing until imprint brief.</p>
       </details>
-      <p><a class="inline-cta" href="#preorder">Go to preorder — $19.99</a></p>
+      <p><a class="inline-cta" href="#buy">Buy LOW WATER — Early Access Copy</a></p>
     </section>
 
-    <section class="offer" id="preorder" aria-labelledby="cta-label">
-      <p class="offer-kicker">Ebook pre-order reservation</p>
+    <section class="offer" id="buy" aria-labelledby="cta-label">
+      <p class="offer-kicker">Early Access Copy</p>
       <div class="price-row">
-        <h2 class="cta-label" id="cta-label">LOW WATER — Early Access Copy</h2>
-        <p class="price">USD $19.99</p>
+        <h2 class="cta-label" id="cta-label">Buy LOW WATER — Early Access Copy</h2>
+        <p class="price">$19.99 USD · PayPal payment, then delivery email.</p>
       </div>
-      <p class="offer-copy">Pay now to reserve Book One of THE HELION COMPACT. After checkout you will leave a delivery email for the Early Access Copy.</p>
+      <p class="offer-copy">Pay $19.99 with PayPal. PayPal confirms payment only; it does not send the book. After checkout, this site asks for the email address that should receive the Early Access file.</p>
+      <p class="offer-copy">Delivered as a Markdown zip until an EPUB exists. Expect an email with LOW WATER Early Access within 24–48 hours of submitting your delivery email — check spam.</p>
       <div id="paypal-button-container"></div>
       <p class="status" id="checkout-status" role="status"></p>
-      <p class="note">The Early Access Copy is emailed after checkout. This site never hosts the manuscript or signed download links. <a href="#contact">Refunds and contact</a>.</p>
+      <p class="note">Purchased Early Access is the full manuscript, emailed privately. This site never hosts the manuscript or signed download URLs. If the file does not arrive, use the thank-you page form or PayPal Buyer Protection. <a href="#contact">Refunds and contact</a>.</p>
       <noscript><p>PayPal checkout requires JavaScript.</p></noscript>
     </section>
 
@@ -622,7 +636,7 @@
         </p>
         <div class="field">
           <label for="news-email">Email address</label>
-          <input id="news-email" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="news-help" />
+          <input id="news-email" name="email" type="email" inputmode="email" autocomplete="email" required aria-required="true" aria-describedby="news-help" />
         </div>
         <p class="form-help" id="news-help">Release notes only — not the checkout delivery form. Occasional notes. Unsubscribe anytime. No spam.</p>
         <button type="submit">Subscribe</button>
@@ -632,7 +646,7 @@
   <footer id="contact">
     <p class="colophon">THE HELION COMPACT · helioncompact.com</p>
     <p class="studio"><a href="https://terraforge-us.com/">Also from the studio — TerraForge early access</a></p>
-    <p class="legal">Refunds follow PayPal Buyer Protection. Order questions: use the delivery form on the <a href="thanks.html">thank-you page</a> after checkout. Non-order mail: the <a href="#notes">release-notes form</a> on this page.</p>
+    <p class="legal">Refunds follow PayPal Buyer Protection. Order questions: the delivery form on the <a href="thanks.html">thank-you page</a> after checkout (include your PayPal transaction ID if the file has not arrived). Non-order mail: the <a href="#notes">release-notes form</a> on this page.</p>
   </footer>
 
   <script src="https://www.paypal.com/sdk/js?client-id=AaxLRJKmKRPyCpXy0WDxCvxbg4rELMydKeT2UvrZta2l-NEbe1NWzqBaeY2LFWn6nStNbjFmIqJ4qFQK&currency=USD&intent=capture"></script>
