@@ -1,7 +1,10 @@
 User-agent: *
 Allow: /
 Allow: /index.html
+Allow: /cover-A2r.jpg
 Disallow: /thanks.html
 Disallow: /thanks/
+Disallow: /*.epub$
+Disallow: /*.zip$
 
 Sitemap: https://helioncompact.com/sitemap.xml
